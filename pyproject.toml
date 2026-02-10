@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tunnelwiz"
+version = "1.2"
+description = "Compute and visualize biomolecular tunnels."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{ name = "Your Name" }]
+keywords = ["MDAnalysis", "tunnel", "structural-biology", "visualization"]
+
+dependencies = [
+  "numpy>=1.22",
+  "scipy>=1.8",
+  "MDAnalysis>=2.0",
+]
+
+[project.optional-dependencies]
+viz = [
+  "pandas>=1.5",
+  "plotly>=5.0",
+  "nglview>=3.0",
+]
+chem = [
+  "rdkit", # note: pip availability varies; many users install via conda
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
