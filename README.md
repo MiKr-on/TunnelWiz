@@ -2,6 +2,8 @@
 
 TunnelWiz is a small Python package for **computing biomolecular tunnels** from structural data and **visualizing** the tunnel axis and tunnel-lining atoms.
 
+**As of 10.02.2026 this package is not yet fully functional and published.**
+
 It contains two modules:
 
 - `builder` — tunnel geometry computation (axis + atom selection + coordinate transforms)
