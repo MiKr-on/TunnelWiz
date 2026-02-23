@@ -1,0 +1,9 @@
+numpy
+scipy
+MDAnalysis
+pandas
+plotly
+rdkit
+
+[viz]
+nglview
